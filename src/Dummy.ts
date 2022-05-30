@@ -1,13 +1,13 @@
-export const PrimeFacts = (n: number) : number[] => {
+export const PrimeFacts = (n: number) : any => {
      const factors = [];
-      let divisor = 2;
+      let i = 2;
 
       while (n >= 2) {
-        if (n % divisor == 0) {
-          factors.push(divisor);
-          n = n / divisor;
+        if (n % i == 0) {
+          factors.push(i);
+          n = n / i;
         } else {
-          divisor++;
+          i++;
         }
       }
       return factors;

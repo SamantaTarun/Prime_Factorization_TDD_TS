@@ -10,6 +10,16 @@ describe("Prime Factorization", () => {
             expect(dummyOutputReturned).toEqual([2,2])
         })
 
+     it("should be same as prime factors of 0 ", () => {
+                const dummyOutputReturned: number[] = PrimeFacts(0)
+                expect(dummyOutputReturned).toEqual([])
+    })
+
+     it("should be same as prime factors of 1 ", () => {
+                     const dummyOutputReturned: number[] = PrimeFacts(1)
+                     expect(dummyOutputReturned).toEqual([])
+     })
+
      it("should be same as prime factors of 8 ", () => {
                 const dummyOutputReturned: number[] = PrimeFacts(8)
                 expect(dummyOutputReturned).toEqual([2,2,2])
@@ -23,5 +33,5 @@ describe("Prime Factorization", () => {
      it("should be same as prime factors of 14 ", () => {
                           const dummyOutputReturned: number[] = PrimeFacts(14)
                           expect(dummyOutputReturned).toEqual([2,7])
-          })
+     })
 })
